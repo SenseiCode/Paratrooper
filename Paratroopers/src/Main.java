@@ -9,7 +9,7 @@ public class Main extends JPanel{
 
 
     public static void main(String[] args) {
-        JFrame window = new JFrame("Paratrooper!");
+        JFrame window = new JFrame("Paratrooper!!");
         window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         window.setBounds(0, 0, FRAMEWIDTH, FRAMEHEIGHT + 22); //(x, y, w, h) 22 due to title bar.
 
