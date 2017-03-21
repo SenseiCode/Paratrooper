@@ -5,13 +5,15 @@ import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 
-import static javax.swing.SwingConstants.EAST;
-import static javax.swing.SwingConstants.WEST;
+
 
 /**
  * Created by jackson_fletcher on 3/13/17.
  */
 public class Main extends JPanel{
+
+
+
 
 
 
@@ -28,7 +30,7 @@ public class Main extends JPanel{
                 Main panel = new Main();
                 panel.setSize(FRAMEWIDTH, FRAMEHEIGHT);
 
-                panel.setFocusable(true);
+
                 panel.grabFocus();
 
                 window.add(panel);
