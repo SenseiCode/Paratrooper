@@ -32,8 +32,8 @@ public class Main extends JPanel {
                     Helicopter heli = new Helicopter(15, 15, EAST);
                     helis.add(heli);
                 }
-                for(Sprite u: helis)
-                    u.update();
+                for(Sprite i: helis)
+                    i.update();
                 repaint();
             }
         });
