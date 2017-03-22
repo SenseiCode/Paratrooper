@@ -16,10 +16,13 @@ public class Main extends JPanel {
     public static final int FRAMEWIDTH = 800, FRAMEHEIGHT = 600;
     private Timer timer;
     private ArrayList<Sprite> helis;
+    private ArrayList<Sprite> paras;
+
     private int helitime = 0;
 
     public Main (){
         helis = new ArrayList<Sprite>();
+        paras =new ArrayList<Sprite>();
 
 
         timer = new Timer(40, new ActionListener() {
@@ -32,8 +35,15 @@ public class Main extends JPanel {
                     Helicopter heli = new Helicopter(15, 15, EAST);
                     helis.add(heli);
                 }
+                if(helitime==30){
+                    helitime=0;
+                    parachuteman man = new parachuteman(0,0,WEST);
+                    paras.add(man);
+                }
                 for(Sprite i: helis)
                     i.update();
+                for(Sprite z: paras)
+                    z.update();
                 repaint();
             }
         });
@@ -54,6 +64,9 @@ public class Main extends JPanel {
         for (Sprite s : helis) {
             s.draw(g2);
 
+        }
+        for (Sprite q : paras) {
+            q.draw(g2);
         }
     }
 
