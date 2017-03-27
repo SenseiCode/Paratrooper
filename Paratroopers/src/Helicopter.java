@@ -21,6 +21,9 @@ public class Helicopter extends Sprite {
     @Override
     public void update(){
         super.update(); //move forward
+
+
+
     }
 
 

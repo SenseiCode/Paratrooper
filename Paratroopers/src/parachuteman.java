@@ -5,12 +5,12 @@ public class parachuteman extends Sprite {
 
     public parachuteman(int x, int y, int dir) {
         super(x, y, dir);
-        setSpeed(5);
+        setSpeed(2);
         setPic("28223-200.png", SOUTH);
 //        int z = (int)(Math.random())*400;
         int z = 100;
-        if(getLoc().getX()==z) {
-            setDir(SOUTH);
+        if(getLoc().y>350) {
+            setSpeed(0);
         }
 
     }
